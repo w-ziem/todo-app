@@ -74,7 +74,11 @@ hr{
     background-color: #dcdada82;
 }
 
-.checked{
+.finished{
     text-decoration: line-through;
     color: #646464;
+}
+
+li.hidden{
+    display: none;
 }
