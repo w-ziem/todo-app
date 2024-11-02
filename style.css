@@ -41,13 +41,40 @@ body{
 .input-row input{
     width: 400px;
     height: 30px;
+    border: 1px solid black;
 }
 
 
+.input-row *{
+    transition: all ease-out 0.1s;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-row *:hover{
+    border-color: #7D83FF;
+}
+
+
+/* fix this */
+.input-row input:focus{
+    border: solid 1.2px #7D83FF ; 
+}
+/* poszukac problemu z domyslnymi stylami przeladarki  */
 .new-task-btn{
     height: 30px;
     width: 30px;
     background-color: #7D83FF;
+    transition: transform font-size ease-in-out 0.3s;
+    font-size: 175%;
+    line-height:0px;
+    font-weight: 400;
+}
+
+.new-task-btn:hover{
+    transform: rotate(10deg);
+    padding: 1;
+    font-size: 200%;
 }
 
 /* tu beda jeszcze style dla sekcji tej dodawania tasków */
@@ -76,9 +103,34 @@ hr{
 
 .finished{
     text-decoration: line-through;
-    color: #646464;
+    color: #7d83ff9f;
 }
 
 li.hidden{
     display: none;
+}
+
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* remove button powinien byc szary jak zadnie jest aktywne jak nie to dopiero czerwony */
+.remove-button{
+    height: 35px;
+    width: 30px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #eb6c6c;
+    transition: all 0.3s ease;
+    
+}
+
+.remove-button:hover{
+    background-color: #e60000;
+    cursor: pointer;
 }

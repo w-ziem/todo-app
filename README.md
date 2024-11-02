@@ -13,3 +13,4 @@
  - delete list
  - clear whole list
  - dark and light mode
+ - checkboxy do zadan

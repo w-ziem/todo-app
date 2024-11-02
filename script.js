@@ -30,6 +30,7 @@ function createTask(){
     newListItem.innerHTML = newTask;
     newListItem.classList.add(optionSelection.value);
     newListItem.classList.add("task");
+    // dodac checkboxy do zadan
     const removeButton = document.createElement("button");
     removeButton.classList.add("remove-button");
     removeButton.innerHTML = 'x';
@@ -59,7 +60,7 @@ optionSelection.addEventListener("change", (e) => {
     hideAllTasks();
     const currList = e.target.value;
     if(currList === 'none') {
-        showAllTasks();
+        showAllTasks(); //dodac zeby pokazywalo z jakiej sa grupy przy ogolnym wyswietlaniu
     } else {
         for (const task of tasks) {
             console.log(`inside loop now curr task ${task}`);
