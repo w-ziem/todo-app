@@ -19,9 +19,10 @@ body{
 
 .main-container{
     background-color: rgba(255, 255, 255, 0.44);
-    padding: 15rem;
+    padding: 5rem;
+    min-height: 615px;
+    max-height: 615px;
     padding-top: 2rem;
-    margin: 10rem;
     border-radius: 25px;
     box-shadow: 30px 63px 41px -2px rgba(66, 68, 90, 0.534);
 }
@@ -95,19 +96,22 @@ hr{
     border-radius: 10px;
     transition: all 0.2s ease-in;
     cursor: pointer;
+    display: flex;
+    opacity: 1;
 }
 
 .tasks li:hover{
     background-color: #dcdada82;
 }
 
-.finished{
+.task.finished .task-text{
     text-decoration: line-through;
-    color: #7d83ff9f;
+    color: #c0bebe;
 }
 
 li.hidden{
     display: none;
+    opacity: 0;
 }
 
 
@@ -119,18 +123,50 @@ li.hidden{
 
 
 /* remove button powinien byc szary jak zadnie jest aktywne jak nie to dopiero czerwony */
-.remove-button{
+.task .remove-button{
     height: 35px;
     width: 30px;
     text-align: center;
     align-items: center;
     border-radius: 50px;
-    background-color: #eb6c6c;
+    background-color: #dad8d8;
+    border: none;
     transition: all 0.3s ease;
     
 }
 
-.remove-button:hover{
+
+.task .remove-button:hover{
+    background-color: #eb6c6c;
+}
+
+.task.finished .remove-button{
+    background-color: #eb6c6c;
+}
+
+.task.finished .remove-button:hover{
     background-color: #e60000;
     cursor: pointer;
+}
+
+
+
+.empty-list-icon{
+    margin: 10% 30% 0 30%;
+    transition: opacity 0.2s ease-in;
+    opacity: 1;
+}
+
+.empty-list-icon p{
+    width: 256px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #0a100dbe;
+}
+
+
+.empty-list-icon.hidden{
+    opacity: 0;
 }

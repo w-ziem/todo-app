@@ -5,6 +5,8 @@
  - create new task in a given list
  - mark task complete 
  - delete task
+ - task deletion confirmation
+ 
 
  ## todo:
  - styling
