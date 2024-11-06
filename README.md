@@ -6,13 +6,16 @@
  - mark task complete 
  - delete task
  - task deletion confirmation
- 
+ - display custom picture if empty list
+
 
  ## todo:
- - styling
- - display custom picture if empty list
+ - add scroll behavior if to many task in single list
  - create new list
  - delete list
  - clear whole list
  - dark and light mode
- - checkboxy do zadan
+ - checkboxes for tasks
+
+### next steps:
+ - add a register/login and a databes to store users tasks

@@ -22,6 +22,7 @@ body{
     padding: 5rem;
     min-height: 615px;
     max-height: 615px;
+    /* TODO: add a scroll if to many tasks */
     padding-top: 2rem;
     border-radius: 25px;
     box-shadow: 30px 63px 41px -2px rgba(66, 68, 90, 0.534);
